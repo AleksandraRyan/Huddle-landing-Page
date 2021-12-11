@@ -1,0 +1,161 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --main-font: 'Poppins', sans-serif;
+  --second-font: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/images/bg-desktop.svg'), rgb(121, 62, 231);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navigation */
+nav h1 {
+  font-family: var(--main-font);
+  margin: 40px 0 0 80px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+main {
+  margin: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.hero img {
+  max-width: 83%;
+}
+
+.about {
+  padding: 0px 70px;
+  color: #fff;
+  max-width: 530px;
+  margin-top: 30px;
+  font-family: var(--main-font);
+  margin-left: -200px;
+}
+
+.about h2 {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.about p {
+  margin: 25px 0;
+  width: 500px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about a {
+  background: white;
+  color: var(--violet);
+  text-decoration: none;
+  padding: 10px 45px;
+  border-radius: 50px;
+  transition: all 800ms ease-in;
+}
+
+.about a:hover {
+  background: var(--violet);
+  color: #fff;
+  border: #fff solid 1px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 200px;
+  margin-top: -60px;
+}
+
+.social i {
+  margin-right: 12px;
+  color: #fff;
+  border: #fff 2px solid;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.social i:hover {
+  color: var(--violet);
+  background: #fff;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 2000px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  img {
+    margin-left: 0px;
+  }
+  body {
+    background: url('/images/bg-mobile.svg'), rgb(121, 62, 231);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    width: 50%;
+    /* flex-wrap: wrap; */
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  .about {
+    margin-left: 0;
+    width: 400px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+    text-align: center;
+    width: 350px;
+  }
+
+  .about p {
+    width: 310px;
+    text-align: center;
+  }
+
+  .about a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-left: 32px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
