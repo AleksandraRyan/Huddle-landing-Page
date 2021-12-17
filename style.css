@@ -169,7 +169,7 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   footer {
     margin-right: 65px;
   }
